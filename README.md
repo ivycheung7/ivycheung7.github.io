@@ -1,5 +1,5 @@
 # DogsRUs
-Turning Into Reality: Spring 2016
+Turning Ideas Into Reality: Spring 2016
 
 A mobile app that connects potential pet adopters with adoption shelters.
 
