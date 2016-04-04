@@ -1,0 +1,17 @@
+/*dog catalog page */
+#layout{
+	padding-top:5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align:right;
+}
+.row{
+	padding-bottom:1%;
+}
+.col-md-4:nth-child(even){
+	background-color:#eeeeee;
+}
+img{
+	height:200px;
+	width:324px;
+}
