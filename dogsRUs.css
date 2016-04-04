@@ -1,4 +1,10 @@
 /*dog catalog page */
+
+.navbar-header img {
+    height: 30px;
+    width: auto;
+}
+
 #layout{
 	padding-top:5%;
 	padding-left: 10%;
