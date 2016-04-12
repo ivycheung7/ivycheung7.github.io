@@ -33,5 +33,15 @@ function refine(){
 	if(!document.getElementById("large").checked){
 		document.getElementById("large").checked = false;
 		document.getElementById("largeDogs").innerHTML = " ";	
-	}	
+	}
+	if((!document.getElementById("large").checked) && (!document.getElementById("small").checked) && (!document.getElementById("medium").checked)){
+		var largeChecked = document.getElementById("large").checked;	
+		document.getElementById("largeDogs").innerHTML = large;
+		document.getElementById("smallDogs").innerHTML = small;
+		document.getElementById("large").checked = largeChecked;
+	}
+
+	
+	
+	
 }
