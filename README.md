@@ -25,3 +25,10 @@ Click on Sarah or Willow (the ones that work)
 Used ivycheung.xyz to host files to access online. (Had domains that weren't used for anything)
 Just used HTML/CSS/JS
 
+4.12.16 Updates:
+--
+
+Added user story: As a user, I would want to narrow down my choices by filtering out pets.
+Notes... Only have sizes as a filtering criteria for now. When there's available data from the database, we will stop hard-coding. 
+
+
