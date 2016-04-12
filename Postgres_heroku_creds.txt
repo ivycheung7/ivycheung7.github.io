@@ -1,0 +1,3 @@
+psql -h ec2-54-221-249-201.compute-1.amazonaws.com -U vyskmusustwnun -d deje93g884ngbn
+
+PW: 25QVVih68WwMB4PaAYdG09i4Za
