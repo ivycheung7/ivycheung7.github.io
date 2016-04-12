@@ -15,26 +15,22 @@ var none = '<div class= "col-md-3" id=\"sortList\"><div class =\"row\" id=\"size
 
 function refine(){
 	if(document.getElementById("small").checked){
-		alert("SMALL CHECKED");
 		var largeChecked = document.getElementById("large").checked;	
 		document.getElementById("smallDogs").innerHTML = small;
 		document.getElementById("large").checked = largeChecked;
 		document.getElementById("small").checked = true;
 	}
 	if(document.getElementById("large").checked){
-		alert("LARGE CHECKED");
 		document.getElementById("largeDogs").innerHTML = large;
 		document.getElementById("large").checked = true;
 	}
 	if(!document.getElementById("small").checked){
-		alert("SMALL NOT CHECKED");
 		document.getElementById("small").checked = false;
 		var largeChecked = document.getElementById("large").checked;
 		document.getElementById("smallDogs").innerHTML = none;
 		document.getElementById("large").checked = largeChecked;
 	}
 	if(!document.getElementById("large").checked){
-		alert("LARGE NOT CHECKED");
 		document.getElementById("large").checked = false;
 		document.getElementById("largeDogs").innerHTML = " ";	
 	}	
