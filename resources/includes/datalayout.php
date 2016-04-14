@@ -105,6 +105,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 			</div>
 		</div>
 	</div>
-	
+	<a href = "search.php"> Click Here </a>
 	</body>
 </html>

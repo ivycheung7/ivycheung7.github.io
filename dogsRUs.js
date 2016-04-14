@@ -1,6 +1,6 @@
 function description(name){
     //alert(name);
-	window.location = name + '.html';
+	window.location = name + '.php';
 };
 var small = '<div class="row" id="smallDogs"><div class= "col-md-3" id="sortList"><div class ="row" id="size"><h4>Refine by</h4><h5>Size<br>' +
 	'<input type="checkbox" id="small" value="Small" onclick="refine()"> Small<br><input type="checkbox" id="medium" value="Medium" onclick="refine()"> Medium<br><input type="checkbox" id="large" value="Large" onclick="refine()"> Large<br></h5>' +
@@ -41,11 +41,4 @@ function refine(){
 		document.getElementById("large").checked = largeChecked;
 	}
 
-	
-	
-	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d5abe15d78b4f94ae4d515ef97fec096c0943bf9
