@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+ivycheung.xyz
+=======
 # DogsRUs
 Turning Ideas Into Reality: Spring 2016
 
@@ -30,3 +33,4 @@ Click on Sarah or Willow (the ones that work)
 
 Profit
 --
+>>>>>>> f4ea611253bb688c1a3209a7d4fd67161ee411a0

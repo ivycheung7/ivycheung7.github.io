@@ -44,4 +44,8 @@ function refine(){
 	
 	
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d5abe15d78b4f94ae4d515ef97fec096c0943bf9
