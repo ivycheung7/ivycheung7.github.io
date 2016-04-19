@@ -37,7 +37,7 @@
   </head>
   <body>
 
-    <div id="div1" style="width:33%;position:absolute;top:20%;left:5%">
+    <div id="div1" style="width:25%;position:absolute;top:10%;left:5%">
       <table>
         <tr>
           <td>Pet Type</td>
@@ -65,7 +65,7 @@
         </tr>
       </table>
     </div>
-    <div id="div2" style="width:60%;position:absolute;top:20%;left:33%;border:1px solid">
+    <div id="div2" style="width:75%;position:absolute;top:10%;left:28%">
       
     </div>
   </body>
