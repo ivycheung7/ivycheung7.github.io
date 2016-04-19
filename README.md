@@ -35,5 +35,15 @@ Just used HTML/CSS/JS
 Added user story: As a user, I would want to narrow down my choices by filtering out pets.
 Notes... Only have sizes as a filtering criteria for now. When there's available data from the database, we will stop hard-coding. 
 
+4.18.16 Updates:
+--
+Added user story: As a user, I want to provide reviews on the adoption center so that other users can use those reviews to make decisions
+
+Added user story: As the application, I need a place to store shelter reviews from users
+
+Users can now register for an account and log into their account if they made one. 
+
+There is now data in the database and the user reviews are pulled from the database.
+
 
 >>>>>>> ce865f962e585d5c9009a062dc71dca921169915

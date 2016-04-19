@@ -1,6 +1,19 @@
 <?php
 echo '<?xml version="1.0" encoding="UTF-8"?>';
+
+include("dbConnect.php");
+	session_start();
+	$user = $_SESSION['user'];
+
+if(isset($_SESSION) && ($_SESSION['user']!='')) {
+		echo "<br><br><br><h4 style='text-align:center;'>Welcome back, " . $_SESSION['user'] . "</h4>";
+}
+
+else {
+echo "<br><br><br><h4 style='text-align:center;'>Please log in or register</h4>";
+}
 ?>
+
 <!DOCTYPE html>
 	<html class="no-js" xml:lang="en" lang="en">
 	<head>
@@ -27,14 +40,16 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="http://payload43.cargocollective.com/1/6/223650/3179096/Phoebe_DementiaDog_Icon.jpg" alt="logo"></a>
+                <a class="navbar-brand page-scroll" href="index.php"><img src="http://payload43.cargocollective.com/1/6/223650/3179096/Phoebe_DementiaDog_Icon.jpg" alt="logo"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a href="login.php">Log In</a></li>
+                    <li><a href="register.php">Register</a></li>
+                    <li><a href="shelters.php">Shelters</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div> 
         </div>
@@ -90,4 +105,4 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 	</div>
 	
 	</body>
-</html>
+</html>			
