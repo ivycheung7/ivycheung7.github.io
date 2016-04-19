@@ -4,7 +4,7 @@
 
 <html>
   <head>
-    <title>DogsRUs</title>
+    <title>DogsRUs Search</title>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script type="text/javascript">
