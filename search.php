@@ -38,6 +38,9 @@
   <body>
 
     <div id="div1" style="width:25%;position:absolute;top:10%;left:5%">
+
+    <b> Search for Pets </b> or <b><a href="index.php">Go Back</a></b>
+
       <table>
         <tr>
           <td>Pet Type</td>

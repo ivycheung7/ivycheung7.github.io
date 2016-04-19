@@ -48,8 +48,8 @@ echo "<br><br><br><h4 style='text-align:center;'>Please log in or register</h4>"
                     <li><a href="login.php">Log In</a></li>
                     <li><a href="register.php">Register</a></li>
                     <li><a href="shelters.php">Shelters</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="search.php">Search for Pets</a></li>
+                    <li><a href="AddPets.php">Add Pets</a></li>
                 </ul>
             </div> 
         </div>

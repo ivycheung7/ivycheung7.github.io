@@ -15,16 +15,14 @@
 	var shelterName = document.getElementById("shelterName").value;
         var petType = document.getElementById("petType").value;
 	var petName = document.getElementById("petName").value;
+	var dob = document.getElementById("dob").value;
         var breed = document.getElementById("breed").value;
         var furColor = document.getElementById("furColor").value;
 	var picturePath = document.getElementById("picturePath").value;
 	var petDescription = document.getElementById("petDescription").value;
         
-        var insertString = "petType=".$petType."&petName=".$petName."&breed=".$breed."&furColor=".$furColor;
-	insertString .= "&picturePath=".$picturePath."&petDescription=".$petDescription;
-	
-	print insertString;
-
+        var insertString = "petType=" +petType+ "&petName=" +petName+ "&dob=" +dob+ "&breed=" +breed+ "&furColor=" +furColor+ "&picturePath=" +picturePath+ "&petDescription=" +petDescription+ "&shelterName=" +shelterName;
+		
         $.ajax
         ({
           type: "POST",
@@ -46,7 +44,7 @@
   </head>
   <body>
     <div id="div1" style="width:75%;position:absolute;top:10%;left:5%">
-    <b> Enter new pet information </b>
+    <b> Enter new pet information </b> or <b><a href="index.php">Go Back</a></b>
     <br> <br>
       <table>
         <tr>
@@ -65,6 +63,12 @@
           <td>Name</td>
           <td>
             <input type="text" id="petName"></input>
+          </td>
+        </tr>
+        <tr>
+          <td>DOB</td>
+          <td>
+            <input type="text" id="dob"></input>
           </td>
         </tr>
         <tr>
