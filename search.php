@@ -59,7 +59,7 @@
         </tr>
 
         <tr>
-          <td rowspon="2">
+          <td rowspan="2">
             <input type="button" style="width:70px" value="Search" onclick="searchQuery()"></input>
           </td>
         </tr>

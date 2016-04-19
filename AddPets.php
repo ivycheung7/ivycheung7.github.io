@@ -92,8 +92,8 @@
           </td>
         </tr>
         <tr>
-          <td rowspon="2">
-            <input type="button" style="width:70px" value="Insert" onclick="insertPet()"></input>
+          <td rowspan="2">
+            <input type="button" style="width:90px" value="Insert" onclick="insertPet()"></input>
           </td>
         </tr>
       </table>
