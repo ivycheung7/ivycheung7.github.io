@@ -1,5 +1,5 @@
 <?php
-	include("dbConnect2.php");
+    include("dbConnect2.php");
     session_start();
 
     $first=$_POST['first'];
@@ -19,28 +19,29 @@
 	$row=$result->fetch_assoc();
 
 	if($row['COUNT(user_name)']>0) {
-		echo "Sorry, that username is already taken";	
+		echo "<br><br><br><h4 style='text-align:center;'>Sorry, that username is already taken</h4>";	
 	}
 
 	else if($bool) {
 		$rquery="INSERT INTO users (user_name, password, firstname, lastname, address)
-		          VALUES
-		          ('$user','$pass','$first','$last','$add')";
+		VALUES
+		('$user','$pass','$first','$last','$add')";
 
 		if($conn->query($rquery)) {
-			echo "You are now a member!";
+			echo "<br><br><br><h4 style='text-align:center;'>You are now a member!</h4>";
 		}
 
 		else {
-			echo "Unsuccessful registration<br>";
+			echo "<br><br><br><h4 style='text-align:center;'>Unsuccessful registration</h4>";
 		    echo $conn->error;
 		}
 	}
 
 	else {
-		echo "Something went wrong!<br> Please try again and make sure all the fields are filled in.<br>";
+		echo "<br><br><br><h4 style='text-align:center;'>Something went wrong!<br> Please try again and make sure all the fields are filled in.</h4>";
 	}
 
-	echo "<meta http-equiv='refresh' content='2; url=index.php'>";
+        echo "<br><br><br><h4 style='text-align:center;'>Redirecting...</h4>";
+	header("refresh:2,index.php");
 ?>
-			
+					

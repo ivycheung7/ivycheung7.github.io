@@ -1,11 +1,9 @@
 <?php
-echo '<?xml version="1.0" encoding="UTF-8"?>';
+    include ("header.php");
+    session_start();
+   $user=$_SESSION['user'];
 
-include("dbConnect.php");
-	session_start();
-	$user = $_SESSION['user'];
-
-if(isset($_SESSION) && ($_SESSION['user']!='')) {
+   if(isset($_SESSION) && ($_SESSION['user']!='')) {
 		echo "<br><br><br><h4 style='text-align:center;'>Welcome back, " . $_SESSION['user'] . "</h4>";
 }
 
@@ -15,46 +13,6 @@ echo "<br><br><br><h4 style='text-align:center;'>Please log in or register</h4>"
 ?>
 
 <!DOCTYPE html>
-	<html class="no-js" xml:lang="en" lang="en">
-	<head>
-	<!--  Bootstrap  -->
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<link rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-	<!--  CSS Files -->
-	<link rel="stylesheet" href="dogsRUs.css" type="text/css" media="screen"/>
-	<!--  Javascript Files -->
-    <!--  For some reason, this does not work :: <script type="text/javascript" src="../resources/js/dogsRUs.js"></script>-->
-	<script type="text/javascript" src="dogsRUs.js"></script>
-	
-	<title>Dogs 'R Us</title>
-	</head>
-	<body>
-	
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container"> 
-            <div class="navbar-header page-scroll"> 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.php"><img src="http://payload43.cargocollective.com/1/6/223650/3179096/Phoebe_DementiaDog_Icon.jpg" alt="logo"></a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.php">Log In</a></li>
-                    <li><a href="register.php">Register</a></li>
-                    <li><a href="shelters.php">Shelters</a></li>
-                    <li><a href="search.php">Search for Pets</a></li>
-                    <li><a href="AddPets.php">Add Pets</a></li>
-                </ul>
-            </div> 
-        </div>
-    </nav>
-        
 	<div id = "layout">
 		<div class="row">
 			<div class= "col-md-4" name="sarah" onclick="description('sarah')">
