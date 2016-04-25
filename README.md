@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ivycheung.xyz
 =======
 =======
@@ -44,6 +42,3 @@ Added user story: As the application, I need a place to store shelter reviews fr
 Users can now register for an account and log into their account if they made one. 
 
 There is now data in the database and the user reviews are pulled from the database.
-
-
->>>>>>> ce865f962e585d5c9009a062dc71dca921169915
