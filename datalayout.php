@@ -33,12 +33,13 @@
 				<h2><strong>How It Works</strong></h2>
 				<ol>
 					<strong>
-					<h4><li>Search for the animal you want</li></h4>
-					<h4><li>Go through the catalog and select an animal</li></h4>
-					<h4><li>Confirm that you want the animal and fill out information.</li></h4>
+					<h4><li>Search for pets with the filters you like</li></h4>
+					<h4><li>Go through the catalog and find a pet</li></h4>
+					<h4><li>Confirm that you want the pet and fill out information.</li></h4>
 					<h4><li>For rentals, you may choose the length of your trial. (Max set by adoption center)</li></h4>
-					<h4><li>(Optional!) Find other animals (max amount depends on type of animal) and have them delivered as well!</li></h4>
-					<h4><li>Wait 1-3 business days as we deliver the dog and supplies to you</li></h4>			
+					<h4><li>(Optional!) Find other pets (max amount depends on type of pet) and have them delivered as well!</li></h4>
+					<h4><li>Wait 1-3 business days as we deliver the pet and supplies to you</li></h4>
+					<h4><li>Have fun with your new best friend!</li></h4>			
 					</strong>
 				</ol>
 			</div>
