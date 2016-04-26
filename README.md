@@ -50,5 +50,7 @@ Added user story: As an application, I want to limit access to certain features,
 Registration is now available for shelters. 
 
 Application constraints: 
--Logged in users can review shelters and search for pets
--Only shelters can add pets for adoption
+
+Logged in users can review shelters and search for pets
+
+Only shelters can add pets for adoption
