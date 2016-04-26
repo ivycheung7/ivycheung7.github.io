@@ -4,13 +4,13 @@
 
     $first=$_POST['first'];
 	$last=$_POST['last'];
-	$add=$_POST['add'];
+	$shelter=$_POST['shelter'];
 	$user=$_POST['user'];
 	$pass=md5($_POST['pass']);
 
     //All fields not blank
     $bool=false;
-	if (($first!='')&&($last!='')&&($add!='')&&($user!='')&&($pass!='')) {
+	if (($first!='')&&($last!='')&&($shelter!='')&&($user!='')&&($pass!='')) {
 		$bool=true;
 	}
 
@@ -33,9 +33,9 @@
 	}
 
 	else if($bool) {
-		$rquery="INSERT INTO users (user_name, password, firstname, lastname, address)
+		$rquery="INSERT INTO shelters (user_name, password, firstname, lastname, shelterId)
 		VALUES
-		('$user','$pass','$first','$last','$add')";
+		('$user','$pass','$first','$last','$shelter')";
 
 		if($conn->query($rquery)) {
 			echo "<br><br><br><h4 style='text-align:center;'>You are now a member!</h4>";
@@ -43,15 +43,17 @@
 
 		else {
 			echo "<br><br><br><h4 style='text-align:center;'>Unsuccessful registration</h4>";
-		    echo $conn->error;
+		    echo $bool;
+            echo "hi";
 		}
 	}
 
 	else {
 		echo "<br><br><br><h4 style='text-align:center;'>Something went wrong!<br> Please try again and make sure all the fields are filled in.</h4>";
+        echo $bool;
 	}
 
-        echo "<br><br><br><h4 style='text-align:center;'>Redirecting...</h4>";
+    echo "<br><br><br><h4 style='text-align:center;'>Redirecting...</h4>";
 	header("refresh:2,index.php");
 ?>
 					

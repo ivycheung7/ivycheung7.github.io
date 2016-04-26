@@ -1,7 +1,3 @@
-<?php 
-   include("dbConnect2.php");
-?>
-
 <!DOCTYPE html>
 <html class="no-js" xml:lang="en" lang="en">
 	<head>
@@ -21,8 +17,13 @@
 	</head>
     
 	<body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
+    </body>
+</html>
+
+<?php 
+   include("dbConnect2.php");
+
+   echo'<nav class="navbar navbar-default navbar-fixed-top">
             <div class="container"> 
                 <div class="navbar-header page-scroll"> 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,18 +33,59 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand page-scroll" href="index.php"><img src="http://payload43.cargocollective.com/1/6/223650/3179096/Phoebe_DementiaDog_Icon.jpg" alt="logo"></a>
-                </div>
+                </div>';
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    //Display different functions based on whether someone is a user or a shelter
+	$sql="SELECT COUNT(user_name) 
+            FROM users 
+            WHERE user_name='$user'";
+
+    $sql2="SELECT COUNT(user_name) 
+            FROM shelters 
+            WHERE user_name='$user'";
+
+	$result=$conn->query($sql);
+	$row=$result->fetch_assoc();
+
+    $result2=$conn->query($sql2);
+	$row2=$result2->fetch_assoc();
+
+    if(isset($_SESSION) && ($_SESSION['user']!='')) {
+        //User
+        if($row['COUNT(user_name)'] > 0) {
+           echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login.php">Log In</a></li>
-                        <li><a href="register.php">Register</a></li>
-                        <li><a href="shelters.php">Shelters</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="shelters.php">Shelter Reviews</a></li>
+                        <li><a href="search.php">Search For Pets</a></li>
                     </ul>
-                </div> 
-            </div>
-        </nav>
-    </body>
-</html>
+                </div>';
+        }
+        
+        //Shelter
+        else if($row2['COUNT(user_name)'] > 0) {
+             echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="shelters.php">Shelter Reviews</a></li>
+                        <li><a href="search.php">Search For Pets</a></li>
+                        <li><a href="AddPets.php">Add Pets</a></li>
+                    </ul>
+                </div>';
+            }
+       }
+
+    else {
+        echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="login.php">Log In</a></li>
+                                <li><a href="register.php">Register</a></li>
+                                <li><a href="shelters.php">Shelter Reviews</a></li>
+                            </ul>
+                        </div>';
+        }
+
+      echo'</div>
+    </nav>';
+?>
+

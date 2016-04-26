@@ -3,6 +3,7 @@
     session_start();
     $user=$_SESSION['user'];
 
+//Display shelter reviews
     $cquery="SELECT shelter_name, rating, review 
                   FROM shelterInfo JOIN shelterReview USING (shelterId)
                   ORDER BY shelter_name ASC";
@@ -16,6 +17,7 @@
 	    echo "<h4>" . $row['shelter_name'] . "</h4> Rating: " . $row['rating'] . "<br> Review: " . $row['review'] . "<br><br>";
     }
 
+//Users can review shelters if they are logged in
     if(isset($_SESSION) && ($_SESSION['user']!='')) {
         echo "<h1>Review a Shelter!</h1>";
         
