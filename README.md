@@ -37,17 +37,19 @@ Notes... Only have sizes as a filtering criteria for now. When there's available
 --
 Added user story: As a user, I want to provide reviews on the adoption center so that other users can use those reviews to make decisions
 
-Added user story: As the application, I need a place to store shelter reviews from users
-
 Users can now register for an account and log into their account if they made one. 
 
 There is now data in the database and the user reviews are pulled from the database.
 
 4.25.16 Updates:
 --
-Added user story: As an application, I want to limit access to certain features, such as only allowing shelters (not pet adopters) to add pets to the database of pets up for adoption.
+Added story: As an application, I want to limit access to certain features, such as only allowing shelters (not pet adopters) to add pets to the database of pets up for adoption.
 
-Added user story: As an application, I do not want to show pets  on the home page if they have been adopted
+Added story: As an application, I do not want to show pets  on the home page if they have been adopted
+
+Added user story: As a user, I want to know which adoption shelter my pet came from so that I can read up on the center and provide feedback
+
+Added user story: Add a way to see recent animals put up for adoption
 
 Registration is now available for shelters. 
 
