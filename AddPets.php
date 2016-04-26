@@ -1,7 +1,7 @@
 <?php
-    include ("header.php");
     session_start();
-   $user=$_SESSION['user'];
+    $user=$_SESSION['user'];
+    include ("header.php");
 
   
 }

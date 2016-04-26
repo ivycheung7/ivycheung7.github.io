@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS `adoption` (
 DROP TABLE IF EXISTS `petInfo`;
 CREATE TABLE IF NOT EXISTS `petInfo` (
   `petId` int(11) NOT NULL AUTO_INCREMENT,
+    `adopted` int(1) NOT NULL,
   `petType` varchar(20) COLLATE latin1_general_ci NOT NULL,
   `pet_name` varchar(25) COLLATE latin1_general_ci DEFAULT NULL,
   `dob` date DEFAULT NULL,

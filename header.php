@@ -51,28 +51,20 @@
 	$row2=$result2->fetch_assoc();
 
     if(isset($_SESSION) && ($_SESSION['user']!='')) {
-        //User
-        if($row['COUNT(user_name)'] > 0) {
-           echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="logout.php">Logout</a></li>
-                        <li><a href="shelters.php">Shelter Reviews</a></li>
-                        <li><a href="search.php">Search For Pets</a></li>
-                    </ul>
-                </div>';
-        }
+         //User
+       echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="shelters.php">Shelter Reviews</a></li>
+                    <li><a href="search.php">Search For Pets</a></li>';
         
         //Shelter
-        else if($row2['COUNT(user_name)'] > 0) {
-             echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="logout.php">Logout</a></li>
-                        <li><a href="shelters.php">Shelter Reviews</a></li>
-                        <li><a href="search.php">Search For Pets</a></li>
-                        <li><a href="AddPets.php">Add Pets</a></li>
-                    </ul>
-                </div>';
+        if($row2['COUNT(user_name)'] > 0) {
+             echo'<li><a href="AddPets.php">Add Pets</a></li>';
             }
+        
+        echo'</ul>
+        </div>';
        }
 
     else {
