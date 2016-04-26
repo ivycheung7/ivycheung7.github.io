@@ -42,3 +42,13 @@ Added user story: As the application, I need a place to store shelter reviews fr
 Users can now register for an account and log into their account if they made one. 
 
 There is now data in the database and the user reviews are pulled from the database.
+
+4.25.16 Updates:
+--
+Added user story: As an application, I want to limit access to certain features, such as only allowing shelters (not pet adopters) to add pets to the database of pets up for adoption.
+
+Registration is now available for shelters. 
+
+Application constraints: 
+-Logged in users can review shelters and search for pets
+-Only shelters can add pets for adoption
