@@ -7,12 +7,12 @@
 	$rating=$_POST['rating'];
 	$review=$_POST['review'];
 
+     //Updates review when user writes another review for the shelter
 	$cquery="SELECT shelterId, user_name 
             FROM shelterReview 
             WHERE shelterId='$shelter' AND user_name='$user'";
 	$result=$conn->query($cquery);
    
-        //Updates review when user writes another review for the shelter
 	if($result->num_rows>0) {
 		$rquery="UPDATE shelterReview 
                 SET rating='$rating',  review = '$review'
@@ -21,8 +21,7 @@
 		if($rresult = $conn->query($rquery))
                         echo "<br><br><br><h4 style='text-align:center;'>Successfully reviewed shelter</h4>";
 		else
-			echo "<br><br><br><h4 style='text-align:center;'>Could not review shelter</h4>";
-			
+			echo "<br><br><br><h4 style='text-align:center;'>Could not review shelter</h4>";	
 	}
 
         //Inserts a new review into the database
