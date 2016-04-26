@@ -55,8 +55,7 @@
            echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="logout.php">Logout</a></li>
-                        <li><a href="register.php">Register</a></li>
-                        <li><a href="shelters.php">Shelters</a></li>
+                        <li><a href="shelters.php">Shelter Reviews</a></li>
                         <li><a href="search.php">Search For Pets</a></li>
                     </ul>
                 </div>';
@@ -67,8 +66,7 @@
              echo'<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="logout.php">Logout</a></li>
-                        <li><a href="register.php">Register</a></li>
-                        <li><a href="shelters.php">Shelters</a></li>
+                        <li><a href="shelters.php">Shelter Reviews</a></li>
                         <li><a href="search.php">Search For Pets</a></li>
                         <li><a href="AddPets.php">Add Pets</a></li>
                     </ul>
@@ -81,7 +79,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="login.php">Log In</a></li>
                                 <li><a href="register.php">Register</a></li>
-                                <li><a href="shelters.php">Shelters</a></li>
+                                <li><a href="shelters.php">Shelter Reviews</a></li>
                             </ul>
                         </div>';
         }

@@ -1,5 +1,14 @@
 <?php
+    include ("header.php");
+    session_start();
+   $user=$_SESSION['user'];
 
+  
+}
+
+else {
+echo "<br><br><br><h4 style='text-align:center;'>Please log in or register</h4>";
+}
 ?>
 
 
@@ -43,10 +52,10 @@
       
   </head>
   <body>
-    <div id="div1" style="width:75%;position:absolute;top:10%;left:5%">
-    <b> Enter new pet information </b> or <b><a href="index.php">Go Back</a></b>
-    <br> <br>
-      <table>
+    <div id="div1" style="width:100%;position:absolute;top:15%;left:40%">
+    <h1><b> Enter new pet information </b></h1>
+
+      <table style="border-collapse:separate;border-spacing:1em">
         <tr>
           <td>Shelter Name</td>
           <td>
@@ -97,12 +106,15 @@
         </tr>
         <tr>
           <td rowspan="2">
-            <input type="button" style="width:90px" value="Insert" onclick="insertPet()"></input>
+            <input type="button" style="width:200px" value="Insert" onclick="insertPet()"></input>
           </td>
         </tr>
       </table>
+
+	<h3><b><a href="index.php">Go Back</a></b></h3>
+
     </div>
-    <div id="div2" style="width:20%;position:absolute;top:20%;left:80%">
+    <div id="div2" style="width:100%;position:absolute;top:90%;left:80%">
       
     </div>
   </body>
