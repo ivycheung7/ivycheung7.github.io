@@ -1,9 +1,10 @@
 <?php
-    session_start();
-    $user=$_SESSION['user'];
     include ("header.php");
+    session_start();
+   $user=$_SESSION['user'];
 
-  
+   if(isset($_SESSION) && ($_SESSION['user']!='')) {
+		echo "<br><br><br><h4 style='text-align:center;'>Hello, " . $_SESSION['user'] . "</h4>";
 }
 
 else {
