@@ -5,12 +5,12 @@
     Teal:				#7E8F7C
     https://blog.crazyegg.com/2012/07/11/website-color-palettes/
     2nd one
- */
  
 @font-face{
 	font-family: 'raleway';
 	src: url('fonts/raleway_thin.woff');
 }
+ */
 *{
 	font-family: 'raleway';
 	color:#3B3738;
