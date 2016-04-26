@@ -11,7 +11,8 @@
 
         <!--  CSS Files -->
         <link rel="stylesheet" href="dogsRUs.css" type="text/css" media="screen"/>
-
+		<!-- Raleway Font -->
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <!--  Javascript Files -->
         <!--  For some reason, this does not work :: <script type="text/javascript" src="../resources/js/dogsRUs.js"></script>-->
         <script type="text/javascript" src="dogsRUs.js"></script>

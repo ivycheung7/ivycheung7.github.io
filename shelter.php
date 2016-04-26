@@ -14,7 +14,7 @@
 
     while($row = $result->fetch_assoc()) {
 	    echo "<h4>" . $row['shelter_name'] . "</h4> Rating: " . $row['rating'] . "<br> Review: " . $row['review'] . "<br><br>";
-      }
+    }
 
     if(isset($_SESSION) && ($_SESSION['user']!='')) {
         echo "<h1>Review a Shelter!</h1>";
