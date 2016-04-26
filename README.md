@@ -47,10 +47,12 @@ There is now data in the database and the user reviews are pulled from the datab
 --
 Added user story: As an application, I want to limit access to certain features, such as only allowing shelters (not pet adopters) to add pets to the database of pets up for adoption.
 
+Added user story: As an application, I do not want to show pets  on the home page if they have been adopted
+
 Registration is now available for shelters. 
 
 Application constraints: 
 
-Logged in users can review shelters and search for pets
+-- Logged in users can review shelters and search for pets
 
-Only shelters can add pets for adoption
+-- Only shelters can add pets for adoption
