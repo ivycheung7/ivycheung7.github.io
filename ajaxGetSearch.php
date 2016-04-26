@@ -3,8 +3,21 @@ include("dbConnect.php");
 
 $conn = get_connection();
 $petType=test_input($_POST["petType"]);
+$breed=test_input($_POST["breed"]);
+$furColor=test_input($_POST["furColor"]);
 
 $sql = "SELECT pet_name, dob, picturePath, pet_description, shelter_name FROM petInfo join shelterInfo using (shelterId) where petType='$petType'";
+
+if($breed != "")
+{
+	$sql .= "and breed='$breed'";
+}
+
+if($furColor != "")
+{
+	$sql .= "and furColor='$furColor'";
+}
+
 $result = $conn->query($sql);
 $returnVal = "<table border = '10'> <tr><th> Pet Name </th> <th> DOB </th> <th> Picture </th> <th> Description </th> <th> Shelter Name </th></tr>";
 

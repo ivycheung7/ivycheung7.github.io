@@ -14,8 +14,7 @@
         var breed = document.getElementById("breed").value;
         var furColor = document.getElementById("furColor").value;
         
-        var queryString = 'petType='+ petType;
-        //queryString+='&breed=' + breed + '&furColor=' + furColor;
+        var queryString = 'petType=' +petType+ '&breed=' +breed+ '&furColor=' +furColor;
         $.ajax
         ({
           type: "POST",
