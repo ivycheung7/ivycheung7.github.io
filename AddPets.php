@@ -4,7 +4,7 @@
    $user=$_SESSION['user'];
        include ("header.php");
 
-    if(isset($_SESSION) && ($_SESSION['user']!='')) 
+     if(isset($_SESSION) && ($_SESSION['user']!='')) 
 	{
 
     $cquery1="SELECT DISTINCT shelter_name from shelterInfo";
@@ -23,8 +23,10 @@
         var furColor = document.getElementById('furColor').value;
 		var picturePath = document.getElementById('picturePath').value;
 		var petDescription = document.getElementById('petDescription').value;
+    var vaccination = document.getElementById('vaccination').value;
+    var vaccinationDate = document.getElementById('vaccinationDate').value;
         
-        var insertString = 'petType=' +petType+ '&petName=' +petName+ '&dob=' +dob+ '&breed=' +breed+ '&furColor=' +furColor+ '&picturePath=' +picturePath+ '&petDescription=' +petDescription+ '&shelterName=' +shelterName;
+        var insertString = 'petType=' +petType+ '&petName=' +petName+ '&dob=' +dob+ '&breed=' +breed+ '&furColor=' +furColor+ '&picturePath=' +picturePath+ '&petDescription=' +petDescription+ '&vaccination=' +vaccination+ '&vaccinationDate=' +vaccinationDate+ '&shelterName=' +shelterName;
 		
         $.ajax
         ({
@@ -100,6 +102,18 @@
           <td>Description</td>
           <td>
             <textarea rows='4' cols='50' type='text' id='petDescription'></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Vaccination</td>
+          <td>
+            <input type='text' id='vaccination'></input>
+          </td>
+        </tr>
+        <tr>
+          <td>Vaccination Date</td>
+          <td>
+			      <input type='date' id='vaccinationDate'></input>            
           </td>
         </tr>
         <tr>

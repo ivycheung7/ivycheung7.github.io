@@ -17,13 +17,15 @@ if($result->num_rows > 0)
 
 $petType = test_input($_POST["petType"]);
 $petName = test_input($_POST["petName"]);
-$dob = test_input($_POST["dob"]);
+$dob = date("Y-m-d", strtotime($_POST["dob"]));
 $breed = test_input($_POST["breed"]);
 $furColor = test_input($_POST["furColor"]);
 $picturePath = test_input($_POST["picturePath"]);
 $petDescription = test_input($_POST["petDescription"]);
+$vaccination = test_input($_POST["vaccination"]);
+$vaccinationDate = date("Y-m-d", strtotime($_POST["vaccinationDate"]));
 
-$sql = "INSERT INTO petInfo (petType, pet_name, dob, breed, furColor, picturePath, pet_description, shelterId) VALUES ('$petType', '$petName', '$dob', '$breed', '$furColor', '$picturePath', '$petDescription', '$shelterId')";
+$sql = "INSERT INTO petInfo (petType, pet_name, dob, breed, furColor, picturePath, pet_description, vaccination, vaccinationDate, shelterId, adopted) VALUES ('$petType', '$petName', '$dob', '$breed', '$furColor', '$picturePath', '$petDescription', '$vaccination', '$vaccinationDate', '$shelterId', 0)";
 
 if ($conn->query($sql) === TRUE) 
 {
