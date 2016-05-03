@@ -1,7 +1,8 @@
 <?php
-    include ("header.php");
+
     session_start();
    $user=$_SESSION['user'];
+       include ("header.php");
 
     if(isset($_SESSION) && ($_SESSION['user']!='')) 
 	{
