@@ -6,7 +6,7 @@ $petType=test_input($_POST["petType"]);
 $breed=test_input($_POST["breed"]);
 $furColor=test_input($_POST["furColor"]);
 
-$sql = "SELECT petId, pet_name, picturePath FROM petInfo where petType='$petType'";
+$sql = "SELECT petId, pet_name, picturePath FROM petInfo where petType='$petType' and adopted='0'";
 
 if($breed != "Any")
 {
